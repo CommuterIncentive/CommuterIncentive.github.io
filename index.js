@@ -2,35 +2,50 @@
 // var ago = ArcGIS({token: 'TCSF2016'})
 
 $(document).ready(function(){
-  // $('button').click(getMQData)
+  console.log("ready!")
+  getMap()
+  $('button').click(getLocs)
+})
+
+
+function getMap(){
   require([
     "esri/Map",
     "esri/views/MapView",
     "dojo/domReady!"
-  ], function(Map, MapView) {
-    // Code to create the map and view will go here
-     var map = new Map({
+  ], function(Map, MapView){
+    var map = new Map({
       basemap: "streets"
     });
-     var view = new MapView({
-      container: "viewDiv",  // Reference to the DOM node that will contain the view
-      map: map               // References the map object created in step 3
+    var view = new MapView({
+      container: "viewDiv",  // Reference to the scene div created in step 5
+      map: map,  // Reference to the map object created before the scene
+      zoom: 12,  // Sets the zoom level based on level of detail (LOD)
+      center: [-122.41, 37.77]  // Sets the center point of view in lon/lat
     });
   });
-})
+}
 
-//   // $ajax.get()
+// var oReq = new XMLHttpRequest();
+// oReq.onload = reqListener;
+// oReq.open("get", "yourFile.txt", true);
+// oReq.send();
 
-// function getMapData(){
+function getLocs(){
+  $.getJSON('/data/locations.json', function(data){
+    var lat_log = []
+    // console.log(data.data)
+    for (var i = 0; i < data.data.length; i ++){
+      var row = data.data[i][24]
+      lat_log.push(
+        '<p>lat: ' + row[1] + ' long : ' + row[2] + '</p>'
+      )
+    }
+    console.log(lat_log)
+    $('#locationData').append(lat_log)
+    $('#locationDate').append('adding things')
+    // debugger
 
-//   // ago.require(["esri/Basemap"], function(Basemap) {
-//   //     console.log(Basemap)
-//   //  });
-//   // var mqKey = 'UShjaMayAC4UkuBJ5nu5rqFuraxzEOQU'
-//   // $.get('https://www.mapquestapi.com/traffic/v2/incidents?&outFormat=json&boundingBox=39.812228252889135%2C-104.85694885253905%2C39.66438516223036%2C-105.11306762695312&key=' + mqKey, function(data){
-//   //   console.log('hit')
-//   //   $('body').append(data)
-//   //   // debugger
-//   // })
-// }
-
+  })
+  // var data = JSON.parse(this.responseText)
+}
