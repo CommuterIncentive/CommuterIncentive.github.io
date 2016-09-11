@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "latitude": 37.773322,
+      "longitude": -122.450983,
+      "altitude": 0,
+      "timestamp": "12:30:00",
+      "date": "Sunday",
+      "valid": 0,
+      "Module-Type": "GPS",
+      "Description": "GPS receiver"
+
+    },{
+      "latitude": 37.7741740554,
+      "longitude": -122.436788704,
+      "altitude": 0,
+      "timestamp": "12:37:31",
+      "date": "Sunday",
+      "valid": 0,
+      "Module-Type": "GPS",
+      "Description": "GPS receiver"
+    },{
+
+      "latitude": 37.7770008073,
+      "longitude": -122.416854621,
+      "altitude": 0,
+      "timestamp": "12:40:12",
+      "date": "Sunday",
+      "valid": 0,
+      "Module-Type": "GPS",
+      "Description": "GPS receiver"
+
+    },{
+
+      "latitude": 37.7757626,
+      "longitude": -122.385804,
+      "altitude": 0,
+      "timestamp": "12:51:58",
+      "date": "Sunday",
+      "valid": 0,
+      "Module-Type": "GPS",
+      "Description": "GPS receiver"
+
+    }
+  ]
+}
