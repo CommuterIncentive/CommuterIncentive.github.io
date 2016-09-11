@@ -3,6 +3,7 @@ $(document).ready(function(){
 
   $('button#showAll').click(getLocs)
   $('button#bikeCrash').click(crashes)
+
 })
 
 function crashes(){
@@ -72,7 +73,7 @@ function crashes(){
       return noiseMarker;
       }
     }})
-    console.log('hit')
+    // console.log('hit')
     var clusteringLayer = new H.map.layer.ObjectLayer(clusteredDataProvider);
 
   // To make objects from clustering provder visible,
