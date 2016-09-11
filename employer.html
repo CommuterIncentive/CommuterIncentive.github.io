@@ -9,27 +9,44 @@
   <script src="employer.js"></script>
 </head>
 <body background='img/map_img.png'>
-
   <div class='container'>
-    <h1>Commuter Incentive</h1>
-  <button class='button-primary' id="stats">See My Stats</button>
-  <table class='winners hidden'>
+    <br>
+    <br>
+    <br>
+
+  <button class='button-primary' id="stats">The <img src="/img/ci.svg" id='logo'> Rankings</button>
+  <table class='winners'>
       <tr id='head'>
         <td>Rank</td>
         <td>Avatar</td>
         <td>Name</td>
-        <td>Commuter Points</td>
+        <td>Points</td>
       </tr>
   </table>
     <!-- <div class = 'slider'> -->
   <!-- <img id='map' src="/img/map_img.png"></img> -->
 
 <!-- </div> -->
-  <div id="startTrip"><button class='button-primary'>Start Trip</button></div>
-  <div class='messages hidden'>
-
-  </div>
+  <div id="startTrip"><button class='button-primary'>Start New Trip</button></div>
 <!-- </div> -->
+  <div id='now' class='hidden'></div>
+  <div class='messages row'>
+    <!-- <div class='six columns'> -->
+    <blockquote id='first' class="oval-quotes hidden">
+        <p>New Counter Counted!</p>
+      </blockquote>
+    <!-- </div> -->
+    <!-- <div class='six columns'> -->
+    <blockquote id='second' class="oval-quotes hidden">
+        <p>New Counter Counted!</p>
+      </blockquote>
+    <!-- </div> -->
+    <!-- <div class='six columns'> -->
+    <blockquote id='third' class="oval-quotes hidden">
+        <p>Stephanie Has Taken the Lead!</p>
+      </blockquote>
+    <!-- </div> -->
+  </div>
 </div>
 </body>
 </html>

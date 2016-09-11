@@ -1,8 +1,8 @@
 $(document).ready(function(){
   // console.log("hello world")
-   $('button#stats').click(slide)
-  $('button#addMore').click(addtoStephanie)
   addWinners()
+
+  // $('button#addMore').click(addtoStephanie)
   $('#startTrip').click(updateResults)
 })
 
@@ -23,7 +23,7 @@ function addWinners() {
       var person = peeps[i]
       var klass = i === 0 ? 'winner' : 'not'
       var rank = i + 1
-      $('table tr:last').after(
+      $('table.winners tr:last').after(
         '<tr class=' + klass +'><td>'+ rank + '</td><td><img src="'+person.avatar+'"></img></td><td>' + person.name + '</td><td class="points">' + person.points + '</td></tr>'
         )
       if (person.name === 'Stephanie') {
@@ -35,24 +35,59 @@ function addWinners() {
 function delayedAlert() {
   var timeoutID = window.setTimeout(getWinner, 2000);
 }
-
-function flash() {
-    $('body').addClass("flash");
-    window.setTimeout(function(){$('body').removeClass("flash");}, 200)
+function removeAlert(id) {
+  window.setTimeout(function(){$(id).hide()}, 1000);
 }
 
-function updateResults(){
+function doThings(row) {
   $.get('https://thingspace.io/dweet/for/SKS7-2e10?latLong=37.7741740554,-122.436788704,12', function(data) {
-    $('.stephanie .points').html(1 + parseInt($('.stephanie .points').html() ))
-    $('.messages').html('<p class=w>New GPS Unit detected!</p>')
+  // console.log(row)
+
+    $.get('https://thingspace.io/dweet/for/SKS7-2e10?latLong=37.7741740554,-122.436788704,12', function(data) {
+    })
+    $('#now').html('<h3>' + row.latitude + ', ' + row.longitude + ' at '+ row.timestamp + '</h3>')
   })
-  flash()
+  // $('table tr:last').after(
+  //   '<tr><td>' + row.timestamp + '</td><td>' + row.latitude + '</td><td>' + row.longitude + '</td><td>' + true + '</td></tr>'
+  //   )
+  if (row.latitude === 37.7741740554) {
+    $('.stephanie .points').html(1 + parseInt($('.stephanie .points').html() ))
+    $('#first').show()
+  }
+  else if (row.latitude === 37.7770008073) {
+    $('.stephanie .points').html(1 + parseInt($('.stephanie .points').html() ))
+    $('#second').show()
+  }
+}
+
+
+function getResults(){
+  $.get('/data/mockArduino.json', function( data ){
+    for (var i = 0; i < data.data.length; i ++ ){
+      var row = data.data[i]
+      doThings(row)
+    }
+  })
+
 
 
   delayedAlert()
+  removeAlert('#first')
+
+}
+
+function updateResults(){
+  // this.hide()
+  $('#now').show()
+  $('#startTrip').hide()
+
+  getResults()
 }
 
 function getWinner(){
+  // flash()
+  $('#second').show()
+  $('#third').show()
   $.get('https://thingspace.io/dweet/for/SKS7-2e10?latLong=37.7741740554,-122.436788704,12', function(data) {
       $.getJSON('/data/change_stats.json', function(data){
         var peeps = data.people.sort(function(a, b){
@@ -69,35 +104,12 @@ function getWinner(){
           var person = peeps[i]
           var klass = i === 0 ? 'winner' : 'not'
           var rank = i + 1
-          $('table tr:last').after(
+          $('table.winners tr:last').after(
             '<tr class=' + klass +'><td>'+ rank + '</td><td><img src="'+person.avatar+'"></img></td><td>' + person.name + '</td><td class="points">' + person.points + '</td></tr>'
             )
         }
     })
   })
-}
-
-function slide() {
-  // $('img').addClass('slider')
-  setTimeout($('img#map').addClass('slider'), 5000)
-  $('img#map').addClass('closed')
-  $('.hidden').show()
-  // $('body').css('background', 'url(/img/map_img.png), no-repeat')
-}
-function addtoStephanie() {
-  console.log('hello')
-
-  // $.ajax({
-  //   method: "GET",
-  //   url: "/data/stats.json",
-  //   data: {'hello': 'world'}
-  // })
-  // .success(function(data){
-  //   console.log(data)
-
-  // })
-  // .fail(function(error){
-  //   console.log(error)
-  // });
-  // $("#addHere").append('HELLO')
+  removeAlert('#second')
+  // removeAlert('#third')
 }

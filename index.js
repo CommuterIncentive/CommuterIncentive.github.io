@@ -130,7 +130,7 @@ function buildMap(){
     map = new H.Map(document.getElementById('map'),
       defaultLayers.terrain.map,{
       center: {lat:37.77, lng:-122.41},
-      zoom: 14
+      zoom: 14.5
     });
     // var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
 
