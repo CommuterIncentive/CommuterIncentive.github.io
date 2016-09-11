@@ -8,23 +8,28 @@
 
   <script src="employer.js"></script>
 </head>
-<body>
+<body background='img/map_img.png'>
+
   <div class='container'>
+    <h1>Commuter Incentive</h1>
   <button class='button-primary' id="stats">See My Stats</button>
-  <button class='button-primary' id="addMore">Add More</button>
-  <table class='winners'>
-      <tr>
+  <table class='winners hidden'>
+      <tr id='head'>
         <td>Rank</td>
         <td>Avatar</td>
         <td>Name</td>
         <td>Commuter Points</td>
       </tr>
   </table>
-    <div class = 'slider'>
-  <img id='map' src="/img/map_img.png"></img>
+    <!-- <div class = 'slider'> -->
+  <!-- <img id='map' src="/img/map_img.png"></img> -->
 
-</div>
-  <div id="refresh"><button>Refresh Results</button></div>
+<!-- </div> -->
+  <div id="startTrip"><button class='button-primary'>Start Trip</button></div>
+  <div class='messages hidden'>
+
+  </div>
+<!-- </div> -->
 </div>
 </body>
 </html>

@@ -3,26 +3,61 @@
   border: 2px solid red;
 }
 
+.w {
+  background-color: white;
+}
+
+.flash{
+    opacity: 0;
+    background: light-grey;
+}
+
+table {
+  width: 100%;
+  font-size: 2.8em;
+  background-color: white;
+  padding: 1em;
+  border: 4px solid grey;
+  /*margin: 1em;*/
+}
+tr {
+  padding: 1em;
+  margin: 1em;
+  height: 5em;
+}
 td {
   text-align: center;
+
+  /*padding: 1em;*/
+  /*margin: 1em;*/
+}
+tr#head {
+  font-weight: bold;
 }
 
 img {
-  width: 5em;
+  width: 4em;
 }
 
-
+.hidden {
+  display: none;
+}
 button {
   width: 100%;
   height: 3em;
   font-size: 4em;
   text-align: center;
+  margin: 0px auto;
 }
 
 img#map {
   /*height: 2500px;*/
   width: 100%;
 
+}
+
+h1 {
+  text-align: center;
 }
 
 .slider {
