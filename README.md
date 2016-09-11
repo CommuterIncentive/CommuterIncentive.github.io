@@ -1,4 +1,4 @@
-![CI logo](img/gps.png)
+![CI logo](img/gps.jpg)
 # Commuter Incentive
 my hackathon project for techcrunch disrupt
 
