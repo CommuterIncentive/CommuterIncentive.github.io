@@ -1,0 +1,22 @@
+{
+  "people": [
+  {"name": "Praful",
+    "avatar": "/img/pretzel.png",
+    "points": 40
+  },
+  {"name": "Mark",
+    "avatar": "/img/x.svg",
+    "points": 18
+  },
+  {"name":" Chris",
+    "avatar": "/img/crab.png",
+    "points": 7
+  },
+  {"name": "Stephanie",
+    "avatar": "/img/bike.png",
+    "points": 39
+  }
+
+
+  ]
+}

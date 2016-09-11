@@ -1,0 +1,896 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "gda9-vxx4",
+      "name" : "Bike Counters",
+      "averageRating" : 0,
+      "category" : "Transportation",
+      "createdAt" : 1460676966,
+      "description" : "This dataset is created to show the locations of bicycle loop counters in San Francisco. Updated quarterly.",
+      "displayType" : "table",
+      "downloadCount" : 110,
+      "indexUpdatedAt" : 1471548400,
+      "licenseId" : "PDDL",
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 19989321,
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1460744721,
+      "publicationGroup" : 9938367,
+      "publicationStage" : "published",
+      "rowClass" : "",
+      "rowsUpdatedAt" : 1471546870,
+      "rowsUpdatedBy" : "dbag-6qd9",
+      "tableId" : 9938367,
+      "totalTimesRated" : 0,
+      "viewCount" : 111,
+      "viewLastModified" : 1461773659,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : 250975795,
+        "name" : "Object ID",
+        "dataTypeName" : "number",
+        "fieldName" : "object_id",
+        "position" : 1,
+        "renderTypeName" : "number",
+        "tableColumnId" : 35666250,
+        "cachedContents" : {
+          "non_null" : 0,
+          "null" : 87,
+          "sum" : "0"
+        },
+        "format" : { }
+      }, {
+        "id" : 250975796,
+        "name" : "Location",
+        "dataTypeName" : "text",
+        "fieldName" : "location",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 35666251,
+        "cachedContents" : {
+          "largest" : "Valencia Street north of 22nd Street SB",
+          "non_null" : 87,
+          "null" : 0,
+          "top" : [ {
+            "item" : "Alemany Blvd north of Ocean Ave",
+            "count" : 20
+          }, {
+            "item" : "Cabrillo at Arguello",
+            "count" : 19
+          }, {
+            "item" : "Great Highway at Judah",
+            "count" : 18
+          }, {
+            "item" : "Irving (corridor without lane)/34th",
+            "count" : 17
+          }, {
+            "item" : "Irving other direction/34th",
+            "count" : 16
+          }, {
+            "item" : "San Jose Avenue east of St Marys Avenue EB",
+            "count" : 15
+          }, {
+            "item" : "San Jose Avenue east of St Marys Avenue WB",
+            "count" : 14
+          }, {
+            "item" : "Cesar Chavez",
+            "count" : 13
+          }, {
+            "item" : "Cesar Chavez other direction",
+            "count" : 12
+          }, {
+            "item" : " ",
+            "count" : 11
+          } ],
+          "smallest" : " "
+        },
+        "format" : { }
+      }, {
+        "id" : 250975797,
+        "name" : "Route Type",
+        "dataTypeName" : "text",
+        "fieldName" : "route_type",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 35666252,
+        "cachedContents" : {
+          "non_null" : 0,
+          "null" : 87
+        },
+        "format" : { }
+      }, {
+        "id" : 250975798,
+        "name" : "Lane Width",
+        "dataTypeName" : "text",
+        "fieldName" : "lane_width",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 35666253,
+        "cachedContents" : {
+          "largest" : "N/A",
+          "non_null" : 87,
+          "null" : 0,
+          "top" : [ {
+            "item" : "6'",
+            "count" : 20
+          }, {
+            "item" : "13'    6'",
+            "count" : 19
+          }, {
+            "item" : "5'",
+            "count" : 18
+          }, {
+            "item" : "~15'",
+            "count" : 17
+          }, {
+            "item" : " ",
+            "count" : 16
+          }, {
+            "item" : "14'",
+            "count" : 15
+          }, {
+            "item" : "N/A",
+            "count" : 14
+          }, {
+            "item" : "13'",
+            "count" : 13
+          }, {
+            "item" : "8'",
+            "count" : 12
+          }, {
+            "item" : "12'6\"",
+            "count" : 11
+          }, {
+            "item" : "9'",
+            "count" : 10
+          }, {
+            "item" : "7'",
+            "count" : 9
+          } ],
+          "smallest" : " "
+        },
+        "format" : { }
+      }, {
+        "id" : 250975799,
+        "name" : "Street Width",
+        "dataTypeName" : "text",
+        "fieldName" : "street_width",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 35666254,
+        "cachedContents" : {
+          "largest" : "Varies (track)",
+          "non_null" : 87,
+          "null" : 0,
+          "top" : [ {
+            "item" : "50'",
+            "count" : 20
+          }, {
+            "item" : "46'9\"",
+            "count" : 19
+          }, {
+            "item" : "62'6\"",
+            "count" : 18
+          }, {
+            "item" : "N/A",
+            "count" : 17
+          }, {
+            "item" : "90'",
+            "count" : 16
+          }, {
+            "item" : "60'",
+            "count" : 15
+          }, {
+            "item" : "63'",
+            "count" : 14
+          }, {
+            "item" : "48'",
+            "count" : 13
+          }, {
+            "item" : "52'9\"",
+            "count" : 12
+          }, {
+            "item" : "42'6\"",
+            "count" : 11
+          }, {
+            "item" : "50' (track)",
+            "count" : 10
+          }, {
+            "item" : "44'",
+            "count" : 9
+          }, {
+            "item" : "52'6\"",
+            "count" : 8
+          }, {
+            "item" : "Varies (track)",
+            "count" : 7
+          }, {
+            "item" : "49'",
+            "count" : 6
+          }, {
+            "item" : "52'",
+            "count" : 5
+          }, {
+            "item" : "55'",
+            "count" : 4
+          }, {
+            "item" : " ",
+            "count" : 3
+          }, {
+            "item" : "72' (median)",
+            "count" : 2
+          }, {
+            "item" : "33'",
+            "count" : 1
+          } ],
+          "smallest" : " "
+        },
+        "format" : { }
+      }, {
+        "id" : 250975800,
+        "name" : "Loop Detector Type",
+        "dataTypeName" : "number",
+        "fieldName" : "loop_detector_type",
+        "position" : 6,
+        "renderTypeName" : "number",
+        "tableColumnId" : 35666255,
+        "cachedContents" : {
+          "largest" : "4",
+          "non_null" : 87,
+          "average" : "0.9540229885057471",
+          "null" : 0,
+          "top" : [ {
+            "item" : "1",
+            "count" : 20
+          }, {
+            "item" : "4",
+            "count" : 19
+          }, {
+            "item" : "2",
+            "count" : 18
+          }, {
+            "item" : "3",
+            "count" : 17
+          }, {
+            "item" : "0",
+            "count" : 16
+          } ],
+          "smallest" : "0",
+          "sum" : "83"
+        },
+        "format" : { }
+      }, {
+        "id" : 250975801,
+        "name" : "Status",
+        "dataTypeName" : "text",
+        "fieldName" : "status",
+        "position" : 7,
+        "renderTypeName" : "text",
+        "tableColumnId" : 35666256,
+        "cachedContents" : {
+          "largest" : "Proposed",
+          "non_null" : 87,
+          "null" : 0,
+          "top" : [ {
+            "item" : "Proposed",
+            "count" : 20
+          }, {
+            "item" : "Installed",
+            "count" : 19
+          } ],
+          "smallest" : "Installed"
+        },
+        "format" : { }
+      }, {
+        "id" : 250975802,
+        "name" : "Approximate Cross Street",
+        "dataTypeName" : "text",
+        "fieldName" : "approximate_cross_street",
+        "position" : 8,
+        "renderTypeName" : "text",
+        "tableColumnId" : 35666257,
+        "cachedContents" : {
+          "largest" : "west of Baker",
+          "non_null" : 87,
+          "null" : 0,
+          "top" : [ {
+            "item" : " ",
+            "count" : 20
+          }, {
+            "item" : "Kirkham St",
+            "count" : 19
+          }, {
+            "item" : "14th St",
+            "count" : 18
+          }, {
+            "item" : "btw High & Clipper T",
+            "count" : 17
+          }, {
+            "item" : "Julian Ave.",
+            "count" : 16
+          }, {
+            "item" : "21st St",
+            "count" : 15
+          }, {
+            "item" : "23rd St",
+            "count" : 14
+          }, {
+            "item" : "S. Van Ness Ave",
+            "count" : 13
+          }, {
+            "item" : "Polk St",
+            "count" : 12
+          }, {
+            "item" : "Grove St",
+            "count" : 11
+          }, {
+            "item" : "S. Van Ness",
+            "count" : 10
+          }, {
+            "item" : "Lake St",
+            "count" : 9
+          }, {
+            "item" : "Arguello Blvd",
+            "count" : 8
+          }, {
+            "item" : "Masonic",
+            "count" : 7
+          }, {
+            "item" : "west of Baker",
+            "count" : 6
+          }, {
+            "item" : "south of Golden Gate",
+            "count" : 5
+          }, {
+            "item" : "Divisadero St",
+            "count" : 4
+          }, {
+            "item" : "7th Ave",
+            "count" : 3
+          }, {
+            "item" : "Hyde St. Overpass",
+            "count" : 2
+          }, {
+            "item" : "9th St",
+            "count" : 1
+          } ],
+          "smallest" : " "
+        },
+        "format" : { }
+      }, {
+        "id" : 250975803,
+        "name" : "Pavement",
+        "dataTypeName" : "text",
+        "fieldName" : "pavement",
+        "position" : 9,
+        "renderTypeName" : "text",
+        "tableColumnId" : 35666258,
+        "cachedContents" : {
+          "non_null" : 0,
+          "null" : 87
+        },
+        "format" : { }
+      }, {
+        "id" : 250975804,
+        "name" : "Bike Facility On Street",
+        "dataTypeName" : "text",
+        "fieldName" : "bike_facility_on_street",
+        "position" : 10,
+        "renderTypeName" : "text",
+        "tableColumnId" : 35666259,
+        "cachedContents" : {
+          "non_null" : 0,
+          "null" : 87
+        },
+        "format" : { }
+      }, {
+        "id" : 250975805,
+        "name" : "Street Repaving Start",
+        "dataTypeName" : "text",
+        "fieldName" : "street_repaving_start",
+        "position" : 11,
+        "renderTypeName" : "text",
+        "tableColumnId" : 35666260,
+        "cachedContents" : {
+          "non_null" : 0,
+          "null" : 87
+        },
+        "format" : { }
+      }, {
+        "id" : 250975806,
+        "name" : "Street Repaving End",
+        "dataTypeName" : "text",
+        "fieldName" : "street_repaving_end",
+        "position" : 12,
+        "renderTypeName" : "text",
+        "tableColumnId" : 35666261,
+        "cachedContents" : {
+          "non_null" : 0,
+          "null" : 87
+        },
+        "format" : { }
+      }, {
+        "id" : 250975807,
+        "name" : "Counter ID",
+        "dataTypeName" : "text",
+        "fieldName" : "counter_id",
+        "position" : 13,
+        "renderTypeName" : "text",
+        "tableColumnId" : 35666262,
+        "cachedContents" : {
+          "largest" : "Fell at Scott",
+          "non_null" : 87,
+          "null" : 0,
+          "top" : [ {
+            "item" : " ",
+            "count" : 20
+          }, {
+            "item" : "3nb.7th",
+            "count" : 19
+          }, {
+            "item" : "8nb.vale",
+            "count" : 18
+          }, {
+            "item" : "13.clip",
+            "count" : 17
+          }, {
+            "item" : "8sb.vale",
+            "count" : 16
+          }, {
+            "item" : "9.14th",
+            "count" : 15
+          }, {
+            "item" : "4sb.potr",
+            "count" : 14
+          }, {
+            "item" : "4nb.potr",
+            "count" : 13
+          }, {
+            "item" : "2eb.mark",
+            "count" : 12
+          }, {
+            "item" : "7eb.grov",
+            "count" : 11
+          }, {
+            "item" : "6.polk",
+            "count" : 10
+          }, {
+            "item" : "2wb.mark",
+            "count" : 9
+          }, {
+            "item" : "5eb.np",
+            "count" : 8
+          }, {
+            "item" : "10nb.argu",
+            "count" : 7
+          }, {
+            "item" : "5wb.np",
+            "count" : 6
+          }, {
+            "item" : "10sb.argu",
+            "count" : 5
+          }, {
+            "item" : "10 lake",
+            "count" : 4
+          }, {
+            "item" : "1pan",
+            "count" : 3
+          }, {
+            "item" : "12.gold",
+            "count" : 2
+          }, {
+            "item" : "12.bake",
+            "count" : 1
+          } ],
+          "smallest" : " "
+        },
+        "format" : { }
+      }, {
+        "id" : 250975808,
+        "name" : "Supervisor District",
+        "dataTypeName" : "number",
+        "fieldName" : "supervisor_district",
+        "position" : 14,
+        "renderTypeName" : "number",
+        "tableColumnId" : 35666263,
+        "cachedContents" : {
+          "non_null" : 0,
+          "null" : 87,
+          "sum" : "0"
+        },
+        "format" : { }
+      }, {
+        "id" : 250975809,
+        "name" : "Hardware Type",
+        "dataTypeName" : "text",
+        "fieldName" : "hardware_type",
+        "position" : 15,
+        "renderTypeName" : "text",
+        "tableColumnId" : 35666264,
+        "cachedContents" : {
+          "largest" : "ECO TWIN",
+          "non_null" : 87,
+          "null" : 0,
+          "top" : [ {
+            "item" : " ",
+            "count" : 20
+          }, {
+            "item" : "ECO PILOT",
+            "count" : 19
+          }, {
+            "item" : "ECO TWIN",
+            "count" : 18
+          }, {
+            "item" : "ECO-COMBO GSM",
+            "count" : 17
+          } ],
+          "smallest" : " "
+        },
+        "format" : { }
+      }, {
+        "id" : 250975810,
+        "name" : "Last Edited Date",
+        "dataTypeName" : "date",
+        "fieldName" : "last_edited_date",
+        "position" : 16,
+        "renderTypeName" : "date",
+        "tableColumnId" : 35666265,
+        "cachedContents" : {
+          "non_null" : 0,
+          "null" : 87
+        },
+        "format" : { }
+      }, {
+        "id" : 250975811,
+        "name" : "Geom",
+        "dataTypeName" : "location",
+        "fieldName" : "geom",
+        "position" : 17,
+        "renderTypeName" : "location",
+        "tableColumnId" : 35666266,
+        "cachedContents" : {
+          "largest" : {
+            "latitude" : "37.7477967367",
+            "longitude" : "-122.442886239"
+          },
+          "non_null" : 87,
+          "null" : 0,
+          "top" : [ {
+            "item" : {
+              "latitude" : "37.7825204647",
+              "longitude" : "-122.473960884"
+            },
+            "count" : 20
+          }, {
+            "item" : {
+              "latitude" : "37.7756233165",
+              "longitude" : "-122.458476133"
+            },
+            "count" : 19
+          }, {
+            "item" : {
+              "latitude" : "37.7602765704",
+              "longitude" : "-122.509394857"
+            },
+            "count" : 18
+          }, {
+            "item" : {
+              "latitude" : "37.7628501492",
+              "longitude" : "-122.493394463"
+            },
+            "count" : 17
+          }, {
+            "item" : {
+              "latitude" : "37.7628686207",
+              "longitude" : "-122.492975957"
+            },
+            "count" : 16
+          }, {
+            "item" : {
+              "latitude" : "37.7351939309",
+              "longitude" : "-122.428089751"
+            },
+            "count" : 15
+          }, {
+            "item" : {
+              "latitude" : "37.7353173273",
+              "longitude" : "-122.428232179"
+            },
+            "count" : 14
+          }, {
+            "item" : {
+              "latitude" : "37.7485891598",
+              "longitude" : "-122.407463953"
+            },
+            "count" : 13
+          }, {
+            "item" : {
+              "latitude" : "37.7485215303",
+              "longitude" : "-122.407339128"
+            },
+            "count" : 12
+          }, {
+            "item" : {
+              "latitude" : "37.7594766502",
+              "longitude" : "-122.463859937"
+            },
+            "count" : 11
+          }, {
+            "item" : {
+              "latitude" : "37.7678111933",
+              "longitude" : "-122.422180028"
+            },
+            "count" : 10
+          }, {
+            "item" : {
+              "latitude" : "37.7477967367",
+              "longitude" : "-122.442886239"
+            },
+            "count" : 9
+          }, {
+            "item" : {
+              "latitude" : "37.7684518048",
+              "longitude" : "-122.422241888"
+            },
+            "count" : 8
+          }, {
+            "item" : {
+              "latitude" : "37.7681697882",
+              "longitude" : "-122.421795073"
+            },
+            "count" : 7
+          }, {
+            "item" : {
+              "latitude" : "37.7585686645",
+              "longitude" : "-122.406886524"
+            },
+            "count" : 6
+          }, {
+            "item" : {
+              "latitude" : "37.7536453731",
+              "longitude" : "-122.406407646"
+            },
+            "count" : 5
+          }, {
+            "item" : {
+              "latitude" : "37.7747577673",
+              "longitude" : "-122.419768169"
+            },
+            "count" : 4
+          }, {
+            "item" : {
+              "latitude" : "37.7784019491",
+              "longitude" : "-122.418962753"
+            },
+            "count" : 3
+          }, {
+            "item" : {
+              "latitude" : "37.779379517",
+              "longitude" : "-122.418425768"
+            },
+            "count" : 2
+          }, {
+            "item" : {
+              "latitude" : "37.7753717137",
+              "longitude" : "-122.418982823"
+            },
+            "count" : 1
+          } ],
+          "smallest" : {
+            "latitude" : "37.7728172883",
+            "longitude" : "-122.43996473"
+          }
+        },
+        "format" : { },
+        "subColumnTypes" : [ "human_address", "latitude", "longitude", "machine_address", "needs_recoding" ]
+      } ],
+      "disabledFeatureFlags" : [ "allow_comments" ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Open Data Commons Public Domain Dedication and License",
+        "termsLink" : "http://opendatacommons.org/licenses/pddl/1.0/"
+      },
+      "metadata" : {
+        "custom_fields" : {
+          "Detailed Descriptive" : {
+            "Data notes" : "",
+            "Geographic unit" : "Latitude/longitude",
+            "Program link" : ""
+          },
+          "Publishing Details" : {
+            "Data change frequency" : "Quarterly",
+            "Publishing frequency" : "Quarterly"
+          },
+          "Department Metrics" : {
+            "Publishing Department" : "Municipal Transportation Agency "
+          }
+        },
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "rowLabel" : "Bike Counter",
+        "rdfSubject" : "0",
+        "rowIdentifier" : "0",
+        "rdfClass" : ""
+      },
+      "owner" : {
+        "id" : "dbag-6qd9",
+        "displayName" : "OpenData",
+        "roleName" : "publisher",
+        "screenName" : "OpenData",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_nominations", "approve_nominations", "moderate_comments", "manage_stories", "feature_items", "change_configurations", "view_domain", "view_others_datasets", "edit_sdp", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "manage_provenance", "view_story", "view_unpublished_story", "view_all_dataset_status_logs", "use_data_connectors" ]
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "dbag-6qd9",
+        "displayName" : "OpenData",
+        "roleName" : "publisher",
+        "screenName" : "OpenData",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_nominations", "approve_nominations", "moderate_comments", "manage_stories", "feature_items", "change_configurations", "view_domain", "view_others_datasets", "edit_sdp", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "manage_provenance", "view_story", "view_unpublished_story", "view_all_dataset_status_logs", "use_data_connectors" ]
+      },
+      "tags" : [ "bike counters" ],
+      "flags" : [ "default", "restorable", "restorePossibleForType" ]
+    }
+  },
+  "data" : [ [ 262, "F5AFB10C-F38F-4078-98A7-7EB67131E9F6", 262, 1471521668, "930934", 1471521668, "930934", null, null, "Oak Street btwn Baker and Scott", null, "6'", "50'", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7728172883", "-122.43996473", null, false ] ]
+, [ 263, "D8EF640E-7DC2-4511-8014-17DB3B77E766", 263, 1471521668, "930934", 1471521668, "930934", null, null, "Polk Street south of Post Street SB", null, "13'    6'", "46'9\"", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7866143385", "-122.419897026", null, false ] ]
+, [ 264, "BE27EF62-4915-4D72-AB99-7B78A4D17ACA", 264, 1471521668, "930934", 1471521668, "930934", null, null, "Valencia Street north of 22nd Street SB", null, "5'", "62'6\"", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7557183746", "-122.421017289", null, false ] ]
+, [ 265, "334E8E8C-BF93-4ED0-8504-5C3B9B4FAC50", 265, 1471521668, "930934", 1471521668, "930934", null, null, "Marina Bike Path at Scott Street", null, "~15'", "N/A", "4", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.8057920985", "-122.442232857", null, false ] ]
+, [ 266, "005343EB-B2CC-41E9-9B3E-C4C64A95647F", 266, 1471521668, "930934", 1471521668, "930934", null, null, "Market Street east of Castro EB", null, "5'", "90'", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7633464615", "-122.43408757", null, false ] ]
+, [ 267, "B21CAD8A-AD1E-460F-994D-CF15B86491B5", 267, 1471521668, "930934", 1471521668, "930934", null, null, "Duboce Bike Path east of Church", null, " ", "N/A", "4", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7694766904", "-122.427720559", null, false ] ]
+, [ 268, "5FB618E6-3D1A-4131-9BE9-CB2C7E0B8C14", 268, 1471521668, "930934", 1471521668, "930934", null, null, "11th Street north of Folsom Street", null, "14'", "60'", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7720029416", "-122.414206614", null, false ] ]
+, [ 269, "6CCAEAF0-4FC9-4C9D-8456-FC6686EA7ADA", 269, 1471521668, "930934", 1471521668, "930934", null, null, "Folsom Street between 16th and 17th", null, "5'", "63'", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7642282794", "-122.415218208", null, false ] ]
+, [ 270, "87A85126-6F12-40A1-A7E7-ACCCF65492A4", 270, 1471521668, "930934", 1471521668, "930934", null, null, "Market Street east of Castro", null, "5'", "90'", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7630753818", "-122.43467499", null, false ] ]
+, [ 271, "D98E8156-6CA8-44AF-9257-D9DC06F3323F", 271, 1471521668, "930934", 1471521668, "930934", null, null, "Fulton Street east of Webster Street", null, "6'", "48'", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7780198807", "-122.429112478", null, false ] ]
+, [ 272, "958DAFCC-EBAA-4756-AC09-D68435424A4F", 272, 1471521668, "930934", 1471521668, "930934", null, null, "John F Kennedy west of Nancy Pelosi Dr", null, "6'", "52'9\"", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7715102081", "-122.46038192", null, false ] ]
+, [ 273, "584F6973-AE83-4506-916E-09C0FFC9AD62", 273, 1471521668, "930934", 1471521668, "930934", null, null, "John F Kennedy east of Transverse Drive", null, "6'", "42'6\"", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7706154822", "-122.47957034", null, false ] ]
+, [ 274, "A83E821D-877E-427C-B3A6-73BD176BFAF3", 274, 1471521668, "930934", 1471521668, "930934", null, null, "Market Street east of 2nd Street WB", null, "N/A", "50' (track)", "2", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7896987184", "-122.400922144", null, false ] ]
+, [ 275, "68178DC0-ED42-40CE-BE8E-B7D0B4B2D6A3", 275, 1471521668, "930934", 1471521668, "930934", null, null, "Market Street east of 2nd Street EB", null, "N/A", "50' (track)", "2", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7899050899", "-122.400500471", null, false ] ]
+, [ 276, "DFAB862E-10A3-4848-A6EB-28B835537038", 276, 1471521668, "930934", 1471521668, "930934", null, null, "17th Street east of Hoff Street", null, "13'", "44'", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7634074824", "-122.419982951", null, false ] ]
+, [ 277, "C60CF119-644E-4A9F-A72F-948A599F9F9D", 277, 1471521668, "930934", 1471521668, "930934", null, null, "8th Street South of Folsom", null, "5'", "52'6\"", "3", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7747777766", "-122.409805485", null, false ] ]
+, [ 278, "D12CFCB0-99C1-4ADA-B055-2696A0C5D1AC", 278, 1471521668, "930934", 1471521668, "930934", null, null, "7th Street north of Townsend Street NB ONLY", null, "5'", "62'6\"", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7724044447", "-122.402400724", null, false ] ]
+, [ 279, "6456E8A3-5496-4162-A3F6-AB010D179F87", 279, 1471521668, "930934", 1471521668, "930934", null, null, "The Embarcadero south of North Point SB", null, "5'", "Varies (track)", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.8069452457", "-122.406610027", null, false ] ]
+, [ 280, "666E82E3-745E-42DC-BB4F-A5651ADB6139", 280, 1471521668, "930934", 1471521668, "930934", null, null, "The Embarcadero south of North Point NB", null, "5'", "Varies (track)", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.8069402621", "-122.406115317", null, false ] ]
+, [ 281, "E7A9C850-F30D-434D-8862-9901DD07ACB9", 281, 1471521668, "930934", 1471521668, "930934", null, null, "Post Street east of Presidio Blvd", null, "5'", "49'", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7836001934", "-122.445371114", null, false ] ]
+, [ 282, "3BA0BCC6-E3BF-43DD-8F3F-25A24E896210", 282, 1471521668, "930934", 1471521668, "930934", null, null, "Harrison Street north of 22nd Street", null, "5'", "52'", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7565866572", "-122.412281555", null, false ] ]
+, [ 283, "4008FDC2-C8EC-4A78-8A4B-35EAB558035C", 283, 1471521668, "930934", 1471521668, "930934", null, null, "Indiana Street north of 22nd Street (NB)", null, "N/A", "55'", "2", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7587652609", "-122.391280525", null, false ] ]
+, [ 284, "E3D87198-C309-4BAD-84F2-0D4BD6746957", 284, 1471521668, "930934", 1471521668, "930934", null, null, "Indiana Street north of 22nd Street (SB)", null, " ", " ", "2", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7593007997", "-122.391330769", null, false ] ]
+, [ 285, "6BD06487-D222-4246-B750-7AC8670403E3", 285, 1471521668, "930934", 1471521668, "930934", null, null, "Portola EB east of Twin Peaks", null, "8'", "72' (median)", "3", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7459111053", "-122.449977225", null, false ] ]
+, [ 286, "E647E37D-8820-4952-98CD-E9B94CB2478D", 286, 1471521668, "930934", 1471521668, "930934", null, null, "Portola WB west of Burnett", null, "8'", "72' (median)", "3", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7469327286", "-122.445636101", null, false ] ]
+, [ 287, "F92E372A-7C70-4BDE-9B29-265EB52E8F56", 287, 1471521668, "930934", 1471521668, "930934", null, null, "Illinois Street south of Illinois Street Bridge NB", null, "5'", "33'", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7465954947", "-122.386195537", null, false ] ]
+, [ 288, "C20D8C11-534B-4007-8851-3FA1F15E4B47", 288, 1471521668, "930934", 1471521668, "930934", null, null, "Illinois Street south of Illinois Street Bridge SB", null, "5'", "33'", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7464285475", "-122.386191299", null, false ] ]
+, [ 289, "C35ACA57-264E-4B43-A1A4-65600AD1C300", 289, 1471521668, "930934", 1471521668, "930934", null, null, "Columbus Avenue south of Broadway NB", null, "N/A", "60'", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7977563609", "-122.406517803", null, false ] ]
+, [ 290, "BC5C0B7C-09F7-44AF-A384-C3E81618CD0D", 290, 1471521668, "930934", 1471521668, "930934", null, null, "Columbus Avenue south of Broadway SB", null, " ", "60'", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7976738073", "-122.406398618", null, false ] ]
+, [ 291, "6E3AAEC4-CBE2-4F78-93AB-19CA55F6983D", 291, 1471521668, "930934", 1471521668, "930934", null, null, "Sloat Blvd west of 23rd Ave EB", null, "N/A", "111' (29' median)", "3", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.734450035", "-122.47985546", null, false ] ]
+, [ 292, "A8C59A8E-27A0-4672-89E8-31601711E9E0", 292, 1471521668, "930934", 1471521668, "930934", null, null, "Sloat Blvd west of 23rd Ave WB", null, "N/A", "111' (29' median)", "3", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7346117857", "-122.479871465", null, false ] ]
+, [ 293, "8A15ECE0-F9FC-4929-90DA-2D5ADDAC518B", 293, 1471521668, "930934", 1471521668, "930934", null, null, "Holloway Ave west of Junipero Serra WB", null, "6'", "54' (median)", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.72154371", "-122.473036578", null, false ] ]
+, [ 294, "DF3FD62D-59A0-4852-9190-C0A9B92A546C", 294, 1471521668, "930934", 1471521668, "930934", null, null, "Holloway Ave west of Junipero Serra EB", null, "6'", "54' (median)", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7214456041", "-122.473086889", null, false ] ]
+, [ 295, "CB0C11F0-3766-4769-8C1B-30C190DA9535", 295, 1471521668, "930934", 1471521668, "930934", null, null, "Page east of Stanyan WB", null, "N/A", "38'9\"", "2", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.770218877", "-122.452844736", null, false ] ]
+, [ 296, "92D670C2-0B79-4EFF-AEA8-C35ACA9FA215", 296, 1471521668, "930934", 1471521668, "930934", null, null, "Page east of Stanyan EB", null, " ", " ", "2", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7701898368", "-122.453072986", null, false ] ]
+, [ 297, "2C23E81E-E69E-4EF4-8567-AE82176FC1FC", 297, 1471521668, "930934", 1471521668, "930934", null, null, "Alemany Blvd north of Ocean Ave", null, "6'", "70' (median)", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7243108514", "-122.437233443", null, false ] ]
+, [ 298, "B8F47A67-5F8C-400C-BFB7-4D51E6EE9BE7", 298, 1471521668, "930934", 1471521668, "930934", null, null, "Alemany Blvd north of Ocean Ave", null, "6'", "70' (median)", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.724279947", "-122.437399136", null, false ] ]
+, [ 299, "B72B2EB5-A9AD-4C21-AD09-B41F5FDC06D4", 299, 1471521668, "930934", 1471521668, "930934", null, null, "Howard west of 8th Street", null, "N/A", "59'", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7757081835", "-122.412274506", null, false ] ]
+, [ 300, "9723D903-336E-47C1-8543-1F9966FA671D", 300, 1471521668, "930934", 1471521668, "930934", null, null, "2nd Street North of Townsend SB", null, "5'", "62'6\"", "2", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7809184733", "-122.39092421", null, false ] ]
+, [ 301, "3D91875A-86E0-45BD-8ADC-ADEB38D41342", 301, 1471521668, "930934", 1471521668, "930934", null, null, "2nd Street North of Townsend NB", null, "12'6\"", "58'6\"", "2", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7810961062", "-122.391146385", null, false ] ]
+, [ 302, "44AFA322-5D24-460F-966A-3FF38CE2AE73", 302, 1471521668, "930934", 1471521668, "930934", null, null, "Clement at 15th (corridor without lane)", null, " ", " ", "2", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7825090122", "-122.474231432", null, false ] ]
+, [ 303, "1B045BA7-E28A-4C99-B7EA-D38BCAE3B14C", 303, 1471521668, "930934", 1471521668, "930934", null, null, "Clement at 15th other direction", null, " ", " ", "2", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7825204647", "-122.473960884", null, false ] ]
+, [ 304, "9362A9A5-515B-489A-8F6A-3FC13AD31F61", 304, 1471521668, "930934", 1471521668, "930934", null, null, "Cabrillo at Arguello", null, "6'", "50'", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7756233165", "-122.458476133", null, false ] ]
+, [ 305, "63FBE867-650E-4450-8E45-1A474507A8C6", 305, 1471521668, "930934", 1471521668, "930934", null, null, "Great Highway at Judah", null, "9'", " ", "4", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7602765704", "-122.509394857", null, false ] ]
+, [ 306, "FD6FAE8F-A4DD-49D5-86E2-4A159801E28A", 306, 1471521668, "930934", 1471521668, "930934", null, null, "Irving (corridor without lane)/34th", null, " ", " ", "2", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7628501492", "-122.493394463", null, false ] ]
+, [ 307, "F4CB9E80-82C9-47AB-96C9-8039AD72943D", 307, 1471521668, "930934", 1471521668, "930934", null, null, "Irving other direction/34th", null, " ", " ", "2", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7628686207", "-122.492975957", null, false ] ]
+, [ 308, "3114468A-B40D-47A4-BCCF-17DB7DE064B1", 308, 1471521668, "930934", 1471521668, "930934", null, null, "San Jose Avenue east of St Marys Avenue EB", null, "7'", "36'", "3", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7351939309", "-122.428089751", null, false ] ]
+, [ 309, "BA3A6581-F929-4326-BCEE-356CE5A85E7E", 309, 1471521668, "930934", 1471521668, "930934", null, null, "San Jose Avenue east of St Marys Avenue WB", null, "6'", "36'", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7353173273", "-122.428232179", null, false ] ]
+, [ 310, "B6E3072F-1D49-48A6-9F64-984FB5B2E249", 310, 1471521668, "930934", 1471521668, "930934", null, null, "Cesar Chavez", null, "5'", " ", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7485891598", "-122.407463953", null, false ] ]
+, [ 311, "6752D971-0E00-427E-B056-8C1DFA19CF7F", 311, 1471521668, "930934", 1471521668, "930934", null, null, "Cesar Chavez other direction", null, "5'", " ", "1", "Proposed", " ", null, null, null, null, " ", null, " ", null, [ null, "37.7485215303", "-122.407339128", null, false ] ]
+, [ 312, "2A955856-3662-4259-8D23-B318CA8C8E18", 312, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Kirkham St", null, null, null, null, "3nb.7th", null, "ECO PILOT", null, [ null, "37.7594766502", "-122.463859937", null, false ] ]
+, [ 313, "1304463A-7685-475C-8B87-1EB4A602C11B", 313, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "14th St", null, null, null, null, "8nb.vale", null, "ECO PILOT", null, [ null, "37.7678111933", "-122.422180028", null, false ] ]
+, [ 314, "6472B401-DFF4-4C74-B9B0-7586A7C8EF7C", 314, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "btw High & Clipper T", null, null, null, null, "13.clip", null, "ECO TWIN", null, [ null, "37.7477967367", "-122.442886239", null, false ] ]
+, [ 315, "00E57F46-B09B-427B-9935-194FFA492DE4", 315, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "14th St", null, null, null, null, "8sb.vale", null, "ECO PILOT", null, [ null, "37.7684518048", "-122.422241888", null, false ] ]
+, [ 316, "65260FE1-CBB9-4384-A8A3-DED40AB53AC7", 316, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Julian Ave.", null, null, null, null, "9.14th", null, "ECO PILOT", null, [ null, "37.7681697882", "-122.421795073", null, false ] ]
+, [ 317, "95D26676-624A-4367-AC3F-B22A4E226E80", 317, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "21st St", null, null, null, null, "4sb.potr", null, "ECO PILOT", null, [ null, "37.7585686645", "-122.406886524", null, false ] ]
+, [ 318, "64A6B59E-B10B-4786-AE51-7D01C43BD6E1", 318, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "23rd St", null, null, null, null, "4nb.potr", null, "ECO PILOT", null, [ null, "37.7536453731", "-122.406407646", null, false ] ]
+, [ 319, "B6EDDB1A-F27C-4287-A9E1-E246EB94029F", 319, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "S. Van Ness Ave", null, null, null, null, "2eb.mark", null, "ECO PILOT", null, [ null, "37.7747577673", "-122.419768169", null, false ] ]
+, [ 320, "CB550E4C-1C04-4BA2-B4B5-8DDD6ECBD470", 320, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Polk St", null, null, null, null, "7eb.grov", null, "ECO PILOT", null, [ null, "37.7784019491", "-122.418962753", null, false ] ]
+, [ 321, "BCEAA757-19E6-4DD6-A5E5-5E36BD36FB4A", 321, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Grove St", null, null, null, null, "6.polk", null, "ECO PILOT", null, [ null, "37.779379517", "-122.418425768", null, false ] ]
+, [ 322, "89BAED0E-89C8-4CA5-80B7-214F666326B4", 322, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "S. Van Ness", null, null, null, null, "2wb.mark", null, "ECO PILOT", null, [ null, "37.7753717137", "-122.418982823", null, false ] ]
+, [ 323, "C3B50DC4-7899-4578-8238-DD4917AD523F", 323, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Polk St", null, null, null, null, "5eb.np", null, "ECO PILOT", null, [ null, "37.8051873405", "-122.424490049", null, false ] ]
+, [ 324, "E35AD40D-F7EB-47AD-BA7C-EE81E6B4F159", 324, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Lake St", null, null, null, null, "10nb.argu", null, "ECO PILOT", null, [ null, "37.786773475", "-122.459280879", null, false ] ]
+, [ 325, "5933109E-4443-4F5A-ABAF-645B0767A868", 325, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Polk St", null, null, null, null, "5wb.np", null, "ECO PILOT", null, [ null, "37.8053967131", "-122.422844178", null, false ] ]
+, [ 326, "4F47BE8A-A804-4EC0-91C0-B0D8959CC718", 326, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Lake St", null, null, null, null, "10sb.argu", null, "ECO PILOT", null, [ null, "37.7872221819", "-122.45931475", null, false ] ]
+, [ 327, "17745763-3BCA-4BC1-9A79-2CE628AFED07", 327, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Arguello Blvd", null, null, null, null, "10 lake", null, "ECO TWIN", null, [ null, "37.7868947054", "-122.459855095", null, false ] ]
+, [ 328, "D4BE625F-5D97-4FF9-97FB-47069D193E3F", 328, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Masonic", null, null, null, null, "1pan", null, "ECO TWIN", null, [ null, "37.7727912661", "-122.446209712", null, false ] ]
+, [ 329, "DD591750-C904-4678-8E38-302EC7ED92DC", 329, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "west of Baker", null, null, null, null, "12.gold", null, "ECO TWIN", null, [ null, "37.7781992768", "-122.442699509", null, false ] ]
+, [ 330, "2E0F0156-0E88-447F-88B8-5E4252CA2ED7", 330, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "south of Golden Gate", null, null, null, null, "12.bake", null, "ECO TWIN", null, [ null, "37.77784131", "-122.441785144", null, false ] ]
+, [ 331, "33037AB4-5EFF-4332-A2D5-A1BDA22DEB05", 331, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Divisadero St", null, null, null, null, "Fell at Scott", null, "ECO TWIN", null, [ null, "37.7741740554", "-122.436788704", null, false ] ]
+, [ 332, "0E97AAB1-2A14-4871-A13C-2F505756224F", 332, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Kirkham St", null, null, null, null, "3sb.7th", null, "ECO PILOT", null, [ null, "37.7613419842", "-122.463990177", null, false ] ]
+, [ 333, "2A9B239B-1DE0-4B90-90C8-4DC10B63B811", 333, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "7th Ave", null, null, null, null, "3eb.kirk", null, "ECO PILOT", null, [ null, "37.7603867906", "-122.464459702", null, false ] ]
+, [ 334, "FB49C534-A322-42B7-9DB1-9C72947C330C", 334, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Kirkham St", null, null, null, null, "3sb.6thave", null, "ECO PILOT", null, [ null, "37.7613888996", "-122.462920186", null, false ] ]
+, [ 335, "13D0DB09-B0F0-46A6-93AC-CA7749A531DE", 335, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Hyde St. Overpass", null, null, null, null, "Broadway Tunnel", null, "ECO-COMBO GSM", null, [ null, "37.7961679547", "-122.419452041", null, false ] ]
+, [ 336, "1AD3858E-A791-4640-A7DF-A2E28DBDBA2C", 336, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "9th St", null, null, null, null, "EB Market Totem", null, "ECO-COMBO GSM", null, [ null, "37.7770008073", "-122.416854621", null, false ] ]
+, [ 337, "150D655B-416F-4BFA-A999-D0E1D27BEF76", 337, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Divisadero St", null, null, null, null, "Fell_at_Scott_IN", null, "ECO TWIN", null, [ null, "37.7741740554", "-122.436788704", null, false ] ]
+, [ 338, "5303CDE3-B9F8-4952-904A-6DC52F82E4A8", 338, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Divisadero St", null, null, null, null, "Fell_at_Scott_OUT", null, "ECO TWIN", null, [ null, "37.7741740554", "-122.436788704", null, false ] ]
+, [ 339, "E50BB862-50BA-4198-B423-07B79C78A80A", 339, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Masonic", null, null, null, null, "1pan_IN", null, "ECO TWIN", null, [ null, "37.7727912661", "-122.446209712", null, false ] ]
+, [ 340, "C4B0F053-3EFE-411D-BEB1-B2B1B1C3596F", 340, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Masonic", null, null, null, null, "1pan_OUT", null, "ECO TWIN", null, [ null, "37.7727912661", "-122.446209712", null, false ] ]
+, [ 341, "18EFE930-EF9C-4627-91EB-8452991B55C2", 341, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Arguello Blvd", null, null, null, null, "10 lake_IN", null, "ECO TWIN", null, [ null, "37.7868947054", "-122.459855095", null, false ] ]
+, [ 342, "E3D37C22-ABA3-4A97-A137-0693039006B0", 342, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "Arguello Blvd", null, null, null, null, "10 lake_OUT", null, "ECO TWIN", null, [ null, "37.7868947054", "-122.459855095", null, false ] ]
+, [ 343, "6C280781-DC06-4245-B5B1-97E3E1C00ECD", 343, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "south of Golden Gate", null, null, null, null, "12.bake_IN", null, "ECO TWIN", null, [ null, "37.77784131", "-122.441785144", null, false ] ]
+, [ 344, "6E654797-20EE-4194-9093-B1EA980A1F17", 344, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "south of Golden Gate", null, null, null, null, "12.bake_OUT", null, "ECO TWIN", null, [ null, "37.77784131", "-122.441785144", null, false ] ]
+, [ 345, "82964F88-80CF-4531-9022-E16506880639", 345, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "west of Baker", null, null, null, null, "12.gold_IN", null, "ECO TWIN", null, [ null, "37.7781992768", "-122.442699509", null, false ] ]
+, [ 346, "CC6D779D-7E8F-48FE-8B8C-21488A1F0874", 346, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "west of Baker", null, null, null, null, "12.gold_OUT", null, "ECO TWIN", null, [ null, "37.7781992768", "-122.442699509", null, false ] ]
+, [ 347, "DC62F67F-A4B4-45AE-B34F-9D7A01410839", 347, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "btw High & Clipper T", null, null, null, null, "13.clip_IN", null, "ECO TWIN", null, [ null, "37.7477967367", "-122.442886239", null, false ] ]
+, [ 348, "28BFB8CD-A599-4A2E-96EA-BA7B7AB4B5E1", 348, 1471521668, "930934", 1471521668, "930934", null, null, " ", null, " ", " ", "0", "Installed", "btw High & Clipper T", null, null, null, null, "13.clip_OUT", null, "ECO TWIN", null, [ null, "37.7477967367", "-122.442886239", null, false ] ]
+ ]
+}
