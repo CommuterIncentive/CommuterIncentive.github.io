@@ -19,6 +19,7 @@ function addWinners() {
       }
       return 0
     })
+
     for (var i= 0; i < peeps.length; i++) {
       var person = peeps[i]
       var klass = i === 0 ? 'winner' : 'not'
@@ -61,17 +62,38 @@ function doThings(row) {
 }
 
 
+
 function getResults(){
   $.get('/data/mockArduino.json', function( data ){
-    for (var i = 0; i < data.data.length; i ++ ){
-      var row = data.data[i]
-      doThings(row)
-    }
+    var rows = data.data
+    setTimeout(function(){
+      doThings(rows[0])
+      setTimeout(function(){
+        doThings(rows[1])
+        setTimeout(function(){
+          doThings(rows[2])
+          $('#first').hide()
+          setTimeout(function(){
+          $('#second').hide()
+            doThings(rows[3])
+            setTimeout(function(){
+              doThings(rows[4])
+              getWinner()
+            }, 1000)
+          }, 1000)
+        }, 1000)
+      }, 1000)
+    }, 1000)
+
+
+
+
+
   })
 
 
 
-  delayedAlert()
+  // delayedAlert()
   removeAlert('#first')
 
 }
@@ -86,7 +108,7 @@ function updateResults(){
 
 function getWinner(){
   // flash()
-  $('#second').show()
+  // $('#second').show()
   $('#third').show()
   $.get('https://thingspace.io/dweet/for/SKS7-2e10?latLong=37.7741740554,-122.436788704,12', function(data) {
       $.getJSON('/data/change_stats.json', function(data){

@@ -32,6 +32,17 @@
 
     },{
 
+      "latitude": 37.7767626,
+      "longitude": -122.395804,
+      "altitude": 0,
+      "timestamp": "12:51:58",
+      "date": "Sunday",
+      "valid": 0,
+      "Module-Type": "GPS",
+      "Description": "GPS receiver"
+
+    },{
+
       "latitude": 37.7757626,
       "longitude": -122.385804,
       "altitude": 0,
