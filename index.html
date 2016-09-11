@@ -22,6 +22,8 @@
     src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
   <script type="text/javascript" charset="UTF-8"
     src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+    src="https://js.api.here.com/v3/3.0/mapsjs-clustering.js"></script>
 
 <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
 <link rel="stylesheet" href="/style/normalize.css">
@@ -35,18 +37,11 @@
 </head>
 <body>
   <div class='container'>
-  <div class='row'>
-    <div class='two columns'><button>Hello</button></div>
-    <div class='ten columns'>Helllooooo</div>
-  </div>
-  <div class = 'row'>
-    <div id='locationData'><pre> </pre></div>
+  <div class='row' id ='head'>
+    <div class='two columns'><button id='showAll'>Show Counters</button></div>
+    <div class='two columns'><button id='bikeCrash'>Show Crash Reports</button></div>
   </div>
   </div>
-  <div id="map" style="width: 100%; height: 400px; background: grey" />
-  <!-- <div id="viewDiv"></div> -->
-  <!-- <div class = 'container'>
-    <h1>Heyo</h1>
-  </div> -->
+  <div id="map" style="width: 100%; height: 80%; background: grey" />
 </body>
 </html>
