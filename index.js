@@ -13,8 +13,7 @@ function showCounterCoord( ) {
   if ($('#map').hasClass('hasCounters')) {
     console.log('booyah')
     var hiddens = $('.hidden')
-    // debugger
-    // hiddens[0].show()
+
     hiddens[0].classList = []
   }
 }
@@ -106,16 +105,7 @@ function crashes(){
   // To make objects from clustering provder visible,
   // we need to add our layer to the map
     map.addLayer(clusteringLayer);
-    clusteredDataProvider.addEventListener('click', function(event) {
-      // Log data bo`und to the marker that has been tapped:
-      console.log(event.target.getData())
-    })
-    // for (var i = 0; i < data.accidents.length; i ++) {
-    //   var row = data.accidents[i]
-    //   var lat_long = {lat: row.lat, lng: row.lng}
-    //   map.addObject(new H.map.Marker(lat_long));
 
-    // }
   });
 }
 
@@ -151,11 +141,7 @@ function getLocs(){
       var icon = data.data[i][14] == 'Installed' ? new H.map.Icon('img/yellow.png') : new H.map.Icon('img/r_bike.png')
       var new_marker = new H.map.Marker({lat: row[1], lng: row[2]}, {icon: icon})
       map.addObject(new_marker);
-      // map.addEventListener('pointerenter', function(event){
-      // //   console.log('hover')
-      //   console.log(event)
-      // //   console.log(new_marker)
-      // })
+
     }
 
 })}
