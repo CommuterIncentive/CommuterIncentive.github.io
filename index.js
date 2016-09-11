@@ -4,8 +4,26 @@ $(document).ready(function(){
   $('button#showAll').click(getLocs)
   $('button#bikeCrash').click(crashes)
   $('button#createRoute').click(calculateRouteFromAtoB)
+  $('.marker').hover(function(){
+    console.log(this)
+  })
+  $('#home-spot').click(getHome)
+  $('#work-spot').click(getWork)
 })
 
+function getHome(){
+
+  $.get('https://www.mapquestapi.com/geocoding/v1/address?key=KEY&inFormat=kvp&outFormat=json&location=2100+Hayes+St+San+Francisco&thumbMaps=false', function( data ){
+    var location = data.results.locations[0].latLng
+  })
+  $('#waypoint0 .loc').html('<pre>37.773322, -122.450983</pre>')
+}
+function getWork(){
+  $.get('https://www.mapquestapi.com/geocoding/v1/address?key=KEY&inFormat=kvp&outFormat=json&location=pier+48%2C+San+Francisco%2C+CA&thumbMaps=false', function( data ){
+    var location = data.results.locations[0].latLng
+  })
+  $('#waypoint3 .loc').html('<pre>37.7757626, -122.385804</pre>')
+}
 
 function crashes(){
   $.getJSON('/data/bikecrash.json', function(data){
@@ -80,7 +98,7 @@ function crashes(){
   // To make objects from clustering provder visible,
   // we need to add our layer to the map
     map.addLayer(clusteringLayer);
-    clusteredDataProvider.addEventListener('tap', function(event) {
+    clusteredDataProvider.addEventListener('click', function(event) {
       // Log data bo`und to the marker that has been tapped:
       console.log(event.target.getData())
     })
@@ -104,12 +122,17 @@ function buildMap(){
     map = new H.Map(document.getElementById('map'),
       defaultLayers.terrain.map,{
       center: {lat:37.77, lng:-122.41},
-      zoom: 13
+      zoom: 14
     });
-    var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+    // var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
 
   // Create the default UI components
   var ui = H.ui.UI.createDefault(map, defaultLayers);
+  var home = new H.map.Marker({lat: 37.773322, lng: -122.450983})
+  var pier48 = new H.map.Marker({lat: 37.7757626, lng: -122.385804})
+
+  map.addObject(home)
+  map.addObject(pier48)
 }
 
 function getLocs(){
@@ -117,7 +140,13 @@ function getLocs(){
     for (var i = 0; i < data.data.length; i ++){
       var row = data.data[i][24]
       var icon = data.data[i][14] == 'Installed' ? new H.map.Icon('img/yellow.png') : new H.map.Icon('img/r_bike.png')
-      map.addObject(new H.map.Marker({lat: row[1], lng: row[2]}, {icon: icon}));
+      var new_marker = new H.map.Marker({lat: row[1], lng: row[2]}, {icon: icon})
+      map.addObject(new_marker);
+      new_marker.addEventListener('hover', function(event){
+        console.log('hover')
+        console.log(event)
+        console.log(new_marker)
+      })
     }
 
 })}
@@ -268,18 +297,25 @@ function addManueversToPanel(route){
 
 function calculateRouteFromAtoB () {
   var waypoints = {}
+
   var router = platform.getRoutingService(),
     routeRequestParams = {
       mode: 'shortest;pedestrian',
       representation: 'display',
-      waypoint0: '37.7141,-122.4199', // St Paul's Cathedral
-      waypoint1: '37.8081,-122.3985',  // Tate Modern
-      waypoint2: '37.7081,-122.3985',  // Tate Modern
+      waypoint0: '37.773322,-122.450983;',
+      waypoint1: '37.7741740554,-122.436788704;',
+      waypoint2: '37.7770008073,-122.416854621;',
+      waypoint3: '37.7757626,-122.385804;',
       routeattributes: 'waypoints,summary,shape,legs',
       maneuverattributes: 'direction,action'
     };
+    var icon =  new H.map.Icon('img/yellow.png')
+    var one = new H.map.Marker({lat: 37.7741740554, lng: -122.436788704}, {icon: icon})
+    var two = new H.map.Marker({lat: 37.7770008073, lng: -122.416854621}, {icon: icon})
 
-
+  map.addObject(one)
+  map.addObject(two)
+  // console.log(router)
   router.calculateRoute(
     routeRequestParams,
     onSuccess,
@@ -293,6 +329,7 @@ function calculateRouteFromAtoB () {
  * see: http://developer.here.com/rest-apis/documentation/routing/topics/resource-type-calculate-route.html
  */
 function onSuccess(result) {
+  console.log(result)
   var route = result.response.route[0];
  /*
   * The styling of the route response on the map is entirely under the developer's control.

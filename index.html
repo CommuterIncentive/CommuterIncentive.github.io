@@ -27,6 +27,7 @@
 
 <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
 <link rel="stylesheet" href="/style/normalize.css">
+<link rel="stylesheet" href="/style/index.css">
 <link rel="stylesheet" href="/style/skeleton.css">
 <script src="https://js.arcgis.com/4.0/"></script>
 <script src="require.min.js"></script>
@@ -45,13 +46,24 @@
   <div class='row'>
     <div class='six columns'>
       <h5>Way Points:</h5>
-      <ul>
-        <li></li>
-      </ul>
+      <table>
+        <tr id='waypoint0'>
+          <td>Begin:</td><td class='loc'><input value='2100 Hayes St, San Francisco, CA'></input><button id='home-spot'>Get Point</button></td>
+        </tr>
+        <tr  id='waypoint1' class='hidden'><td>Counter 1</td><td><pre id='first-way'>37.7741740554, -122.436788704</pre></tr>
+        <tr id ='waypoint2'class='hidden'><td>Counter 2</td><td><pre id='second-way'>37.7770008073, -122.416854621</pre></tr>
+        <tr id='waypoint3'>
+          <td>Finish</td><td class='loc'><input value='PIER 48, San Francisco, CA'></input><button id='work-spot'>Get Point</button></td>
+        </tr>
+      </table>
     </div>
     <div class='six columns'>
       <h5>Avoid:</h5>
-      <ul></ul>
+      <table>
+        <tr>
+          <td>Accidents:</td><td><pre>37.777409, -122.413105</td>
+        </tr>
+      </table>
     </div>
   </div>
   </div>
