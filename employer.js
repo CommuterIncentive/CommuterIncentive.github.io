@@ -1,8 +1,8 @@
 $(document).ready(function(){
   // console.log("hello world")
-   $('button#stats').click(slide)
-  $('button#addMore').click(addtoStephanie)
   addWinners()
+
+  // $('button#addMore').click(addtoStephanie)
   $('#startTrip').click(updateResults)
 })
 
@@ -33,26 +33,39 @@ function addWinners() {
   });
 }
 function delayedAlert() {
-  var timeoutID = window.setTimeout(getWinner, 2000);
+  var timeoutID = window.setTimeout(getWinner, 3000);
+}
+function removeAlert(id) {
+  window.setTimeout(function(){$(id).hide()}, 2000);
 }
 
-function flash() {
-    $('body').addClass("flash");
-    window.setTimeout(function(){$('body').removeClass("flash");}, 200)
-}
+// function flash() {
+//     console.log('flashing?')
+//     // $('body').addClass("flash");
+//     $('.winner').addClass('flashy')
+//     window.setTimeout($('.winner').removeClass('flashy'), 500)
+// }
+
+// function bePretty(){
+// }
 
 function updateResults(){
+  // this.hide()
+  $('#startTrip').hide()
   $.get('https://thingspace.io/dweet/for/SKS7-2e10?latLong=37.7741740554,-122.436788704,12', function(data) {
     $('.stephanie .points').html(1 + parseInt($('.stephanie .points').html() ))
-    $('.messages').html('<p class=w>New GPS Unit detected!</p>')
+    $('#first').show()
   })
-  flash()
 
 
   delayedAlert()
+  removeAlert('#first')
 }
 
 function getWinner(){
+  // flash()
+  $('#second').show()
+  $('#third').show()
   $.get('https://thingspace.io/dweet/for/SKS7-2e10?latLong=37.7741740554,-122.436788704,12', function(data) {
       $.getJSON('/data/change_stats.json', function(data){
         var peeps = data.people.sort(function(a, b){
@@ -75,29 +88,6 @@ function getWinner(){
         }
     })
   })
-}
-
-function slide() {
-  // $('img').addClass('slider')
-  setTimeout($('img#map').addClass('slider'), 5000)
-  $('img#map').addClass('closed')
-  $('.hidden').show()
-  // $('body').css('background', 'url(/img/map_img.png), no-repeat')
-}
-function addtoStephanie() {
-  console.log('hello')
-
-  // $.ajax({
-  //   method: "GET",
-  //   url: "/data/stats.json",
-  //   data: {'hello': 'world'}
-  // })
-  // .success(function(data){
-  //   console.log(data)
-
-  // })
-  // .fail(function(error){
-  //   console.log(error)
-  // });
-  // $("#addHere").append('HELLO')
+  removeAlert('#second')
+  // removeAlert('#third')
 }
