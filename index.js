@@ -1,28 +1,36 @@
 $(document).ready(function(){
   buildMap()
-
   $('button#showAll').click(getLocs)
   $('button#bikeCrash').click(crashes)
   $('button#createRoute').click(calculateRouteFromAtoB)
-  $('.marker').hover(function(){
-    console.log(this)
-  })
   $('#home-spot').click(getHome)
   $('#work-spot').click(getWork)
+  $('body').dblclick(showCounterCoord)
+  // $('#map').click(showCounterCoord)
 })
+
+function showCounterCoord( ) {
+  if ($('#map').hasClass('hasCounters')) {
+    console.log('booyah')
+    var hiddens = $('.hidden')
+    // debugger
+    // hiddens[0].show()
+    hiddens[0].classList = []
+  }
+}
 
 function getHome(){
 
   $.get('https://www.mapquestapi.com/geocoding/v1/address?key=KEY&inFormat=kvp&outFormat=json&location=2100+Hayes+St+San+Francisco&thumbMaps=false', function( data ){
     var location = data.results.locations[0].latLng
   })
-  $('#waypoint0 .loc').html('<pre>37.773322, -122.450983</pre>')
+  $('#waypoint0 .loc').html('37.773322, -122.450983')
 }
 function getWork(){
   $.get('https://www.mapquestapi.com/geocoding/v1/address?key=KEY&inFormat=kvp&outFormat=json&location=pier+48%2C+San+Francisco%2C+CA&thumbMaps=false', function( data ){
     var location = data.results.locations[0].latLng
   })
-  $('#waypoint3 .loc').html('<pre>37.7757626, -122.385804</pre>')
+  $('#waypoint3 .loc').html('37.7757626, -122.385804')
 }
 
 function crashes(){
@@ -136,17 +144,18 @@ function buildMap(){
 }
 
 function getLocs(){
+  $('#map').addClass('hasCounters')
   $.getJSON('/data/locations.json', function(data){
     for (var i = 0; i < data.data.length; i ++){
       var row = data.data[i][24]
       var icon = data.data[i][14] == 'Installed' ? new H.map.Icon('img/yellow.png') : new H.map.Icon('img/r_bike.png')
       var new_marker = new H.map.Marker({lat: row[1], lng: row[2]}, {icon: icon})
       map.addObject(new_marker);
-      new_marker.addEventListener('hover', function(event){
-        console.log('hover')
-        console.log(event)
-        console.log(new_marker)
-      })
+      // map.addEventListener('pointerenter', function(event){
+      // //   console.log('hover')
+      //   console.log(event)
+      // //   console.log(new_marker)
+      // })
     }
 
 })}
@@ -296,8 +305,8 @@ function addManueversToPanel(route){
 }
 
 function calculateRouteFromAtoB () {
+  // buildMap()
   var waypoints = {}
-
   var router = platform.getRoutingService(),
     routeRequestParams = {
       mode: 'shortest;pedestrian',
